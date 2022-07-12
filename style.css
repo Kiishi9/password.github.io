@@ -21,6 +21,7 @@ span{
 }
 hr{
     border: 1px solid #2f3e53;
+    width: 550px;
 }
 button{
     background-color: #4adf86;
@@ -29,24 +30,29 @@ button{
     padding: 10px;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
 }
-/*.item1, .item2{
-    background: #273549;
-    border: none;
-    border-radius: 8px;
-    padding: 20px;
-    width: 100px;
-    height: 15px;
-}*/
+button:hover{
+    background-color: #2f3e53;
+}
+
 .container{
     display: flex;
 }
+.copy{
+    width: 150px;
+}
+.fa-solid fa-copy{
+    color: #55f991; 
+}
+
 input {
     margin: 20px 0 10px 30px;
     padding: 20px;
     user-select: none;
     height: 15px;
-    width: 200px;
+    position: relative;
+    width: 100px;
     color: #55f991;
     border-radius: 6px;
     border: none;
@@ -54,9 +60,11 @@ input {
     outline: none;
     background-color: #273549;
     }
-    input::placeholder{
+input::placeholder{
         color: #55f991;
     }
+
+
 
 
 
