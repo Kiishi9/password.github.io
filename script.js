@@ -5,6 +5,8 @@ let passwordBtn = document.getElementById("password-btn")
 let password = "";
 let passwordLength = 10;
 let passwordTwo = "";
+let copyBtn = document.getElementById("copy-btn");
+let copy = document.getElementById("copy")
 
 function generatePassword(){
     password = "";
@@ -22,3 +24,36 @@ function generatePassword(){
     document.getElementById("display-two").value = passwordTwo;
 
 }
+
+
+copyBtn.addEventListener('click', () => {
+	const textarea = document.createElement('textarea');
+	const password = display.value;
+	
+	if(!password)
+     { return; }
+	
+	textarea.value = password;
+	document.body.appendChild(textarea);
+	textarea.select();
+	textarea.remove();
+	alert('Password copied to clipboard');
+});
+
+copy.addEventListener('click', () => {
+	const textarea = document.createElement('textarea');
+	const password = display.value;
+	
+	if(!password)
+     { return; }
+	
+	textarea.value = password;
+	document.body.appendChild(textarea);
+	textarea.select();
+	textarea.remove();
+	alert('Password copied to clipboard');
+});
+
+
+
+
